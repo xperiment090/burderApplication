@@ -62,13 +62,10 @@ class FeedsContainer extends Component {
         let {feeds, feed, isAddressModalOpen} = this.state;
         return (
             <div>
-                <Table responsive>
-                <tbody>
-                {feeds.map(f => {
-                    return <Feed feed={f} toggle={this.toggleAddressModal} isAddressModalOpen={isAddressModalOpen} />
+                
+                {feeds.map((f, i) => {
+                    return <Feed key={i} feed={f} toggle={this.toggleAddressModal} isAddressModalOpen={isAddressModalOpen} />
                 })}
-                </tbody>
-                </Table>
                 {/* {this.addressModal()} */}
                 <AddressModal feed={feed} isAddressModalOpen={isAddressModalOpen} toggleModal= {this.toggleAddressModal}/>
             </div>
