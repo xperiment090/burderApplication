@@ -14,6 +14,7 @@ const AddressModal = (props) => {
                 <Row>
                     <Col xs={12}>{feed ? feed.city: '-'}</Col>
                     <Col xs={12}>{feed ? feed.street: '-'}</Col>
+                    <Col xs={12}>{feed ? <a target="_blank" href={feed? feed.website:''} style={{color: "orange", fontWeight: "bold"}}>website</a>: '-'}</Col>
                 </Row>
             </ModalBody>
             <ModalFooter>
