@@ -6,6 +6,8 @@
     /* width: 95%; */
     background-color: #F8F9FA;
     box-shadow: 4px 4px black;
-    background-image: linear-gradient(#CCCFF2, #CCCCDB);
+    /* background-image: linear-gradient(#CCCFF2, #CCCCDB); */
+    background-image: linear-gradient(#F5F7FA, #B8C6DB
+    );
 
 }
