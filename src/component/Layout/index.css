@@ -31,5 +31,10 @@
     .headerBar {
         width: 94% !important;
     }
+    .headerImg {
+        top: 18%;
+        position: absolute;
+        width: 9%;
+    }
 }
 
