@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
 import {Row, Col, Container} from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faCheck, faTimes, faMapMarker } from '@fortawesome/free-solid-svg-icons'
 import Rating from './../Rating/Rating';
 import './css/feed.css'
 
 
 const isActive = (status) => {
     return (
-        status == 'y' ? <FontAwesomeIcon icon={faCheck} />: <FontAwesomeIcon icon={faTimes} />
+        status == 'y' ? <FontAwesomeIcon icon={faCheck} style={{color:'green'}}/>: <FontAwesomeIcon icon={faTimes}  style={{color:'red'}}/>
     )
 }
 
@@ -35,7 +35,7 @@ const Feed = (props) => {
                     <Col>Classic Burger {isActive(feed.burger_classic)}</Col>
                     <Col>Cheese Burger {isActive(feed.burger_cheese)}</Col>
                     <Col>Bio {isActive(feed.burger_bio)}</Col>
-                    <Col><a href="#" onClick={(e) => toggle(e, feed)}>Address</a></Col>
+                    <Col><a href="#" onClick={(e) => toggle(e, feed)}>Address <FontAwesomeIcon icon={faMapMarker} style={{color:'orange'}}/></a></Col>
                 </Row>
             {/* <tr>
                 <td>{feed.name}</td>

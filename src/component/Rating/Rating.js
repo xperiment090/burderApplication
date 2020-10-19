@@ -26,7 +26,7 @@ const Rating = (props) => {
                     star = faStarEmpty
             }
 
-            stars.push(<FontAwesomeIcon icon={star} />)
+            stars.push(<FontAwesomeIcon icon={star} style={star == faStar || faStarHalf ? {color: 'orange'}:''} />)
         }
         return stars
     }

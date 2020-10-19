@@ -3,11 +3,7 @@ const uri = `https://burgervergleich.autoteile.check24.de/api/comparison/type/bu
 
 const getAllFeeds = () => {
     try {
-        return fetch(uri, {
-            headers: {
-                "ContentType": "application/json"
-            }
-        })
+        return fetch(uri)
         .then(response => response.json())
     }
     catch(e) {
