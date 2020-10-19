@@ -1,7 +1,18 @@
 .homePage {
     background-image: url("./../../assets/images/bg_dirt.jpg");
+    font-family: SansPro Regular;
 }
 .customContainer {
     background-color: #fff;
     min-height: 800px;
+}
+.footer {
+    color: #fff;
+    background: #6A1817;
+    border-radius: 3px;
+}
+.cusHeading {
+    font-family: SansPro Bold;
+    color: #6A1817;
+    text-align: left;
 }

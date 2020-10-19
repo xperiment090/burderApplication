@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+	font-family: "SansPro Regular";
+	src: url("./assets/fonts/SansPro/SourceSansPro-Regular.ttf")
+}
+@font-face {
+	font-family: "SansPro Light";
+	src: url("./assets/fonts/SansPro/SourceSansPro-Light.ttf")
+}
+@font-face {
+	font-family: "SansPro Bold";
+	src: url("./assets/fonts/SansPro/SourceSansPro-Bold.ttf")
+}

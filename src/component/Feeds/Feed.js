@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Row, Col, Container} from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons'
-import { Link } from 'react-router-dom';
+import Rating from './../Rating/Rating';
 import './css/feed.css'
 
 
@@ -30,6 +30,7 @@ const Feed = (props) => {
     return (
         <Container>
                 <Row className="customRow">
+                    <Col><Rating value={feed.rating}/></Col>
                     <Col>{feed.name}</Col>
                     <Col>Classic Burger {isActive(feed.burger_classic)}</Col>
                     <Col>Cheese Burger {isActive(feed.burger_cheese)}</Col>

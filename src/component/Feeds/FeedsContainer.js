@@ -1,23 +1,25 @@
 import React, { Component } from 'react'
-import { Table } from 'reactstrap';
+import { Spinner } from 'reactstrap';
 import Feed from './Feed';
 import AddressModal from './AddressModal';
+import {getAllFeeds} from './../../api/feeds';
 
 
-const uri = `https://burgervergleich.autoteile.check24.de/api/comparison/type/burger`;
 
 class FeedsContainer extends Component {
     constructor(props) {
         super(props);
         this.state = { 
             feeds: [],
-            isAddressModalOpen: false
+            isAddressModalOpen: false,
+            isLoading: true
          };
     }
 
 
-    componentDidMount = () => {
-        this.getAllFeeds(uri);
+    componentDidMount = async () => {
+        let feeds = await getAllFeeds()
+        this.setState({feeds, isLoading: false});
     }
 
     /**
@@ -26,15 +28,7 @@ class FeedsContainer extends Component {
      * @param {STRING} uri 
      */
     getAllFeeds = (uri) => {
-        fetch(uri, {
-            headers: {
-                "ContentType": "application/json"
-            }
-        })
-        .then(response => response.json())
-        .then(data => {
-            this.setState({feeds: data});
-        })
+        
     }
 
     /**
@@ -59,11 +53,11 @@ class FeedsContainer extends Component {
 
 
     render() {
-        let {feeds, feed, isAddressModalOpen} = this.state;
+        let {feeds, feed, isAddressModalOpen, isLoading} = this.state;
         return (
             <div>
-                
-                {feeds.map((f, i) => {
+                <h1 className="cusHeading">Feeds</h1>
+                {isLoading ? <Spinner/> : feeds.map((f, i) => {
                     return <Feed key={i} feed={f} toggle={this.toggleAddressModal} isAddressModalOpen={isAddressModalOpen} />
                 })}
                 {/* {this.addressModal()} */}

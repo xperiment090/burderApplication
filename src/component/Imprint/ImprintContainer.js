@@ -18,6 +18,7 @@ class ImprintContainer extends Component {
     render() {
         return (
             <div>
+                <h1 className="cusHeading">Imprint</h1>
                 {data.map(d => <AccordionBox {...d} key={d.id} />)}
             </div>
         );
