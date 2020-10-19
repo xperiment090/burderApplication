@@ -2,10 +2,10 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 2%;
-    margin: 0 0 1% 0;
+    margin: 0 0 2% 0;
     /* width: 95%; */
     background-color: #F8F9FA;
-    box-shadow: 4px 4px black;
+    box-shadow: 4px 6px #ccc;
     /* background-image: linear-gradient(#CCCFF2, #CCCCDB); */
     background-image: linear-gradient(#F5F7FA, #B8C6DB
     );
