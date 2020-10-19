@@ -34,7 +34,7 @@ const AccordionBox = (props) => {
             <div onClick={() => toggleHandler()} className="accHeading">{heading}</div>
             {/* <div id={id} className="collaps collapse" aria-expanded={false}> */}
             <div id={id} className={object.collapse} aria-expanded={object.expanded} style={object.style}>
-                <p>{text}</p>
+                <p className="customPara">{text}</p>
             </div>
         </div>
     );

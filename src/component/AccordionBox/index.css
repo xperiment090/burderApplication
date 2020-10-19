@@ -3,4 +3,12 @@
     text-align: left;
     padding: 1%;
     cursor: pointer;
+    background: #F8F9FA;
+    border-radius: 3px;
+    margin-bottom: 1%;
+    color: #000;
+}
+
+.customPara {
+    text-align: justify;
 }
