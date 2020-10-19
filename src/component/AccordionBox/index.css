@@ -5,10 +5,14 @@
     cursor: pointer;
     background: #F8F9FA;
     border-radius: 3px;
-    margin-bottom: 1%;
+    /* margin-bottom: 1%; */
     color: #000;
 }
 
 .customPara {
     text-align: justify;
+    border: 1px solid #ccc;
+    margin: 0 0 1% 0;
+    border-top: none;
+    padding: 1%;
 }
