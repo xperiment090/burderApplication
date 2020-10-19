@@ -22,7 +22,7 @@
     position: absolute !important;
     width: 78%
 }
-@media only screen and (min-width: 768) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     .headerBar {
         width: 90% !important;
     }
