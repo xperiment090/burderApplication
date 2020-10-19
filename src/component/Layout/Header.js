@@ -6,7 +6,7 @@ import logo from './../../assets/images/logo.png';
 const Header = (props) => {
     let {routes} = props
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light" expand="lg" className="headerBar">
             <Navbar.Brand href="#home"><img src={logo} width="50%"/></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">

@@ -16,3 +16,20 @@
     color: #6A1817;
     text-align: left;
 }
+.headerBar {
+    opacity: 0.5;
+    z-index: 9999;
+    position: absolute !important;
+    width: 78%
+}
+@media only screen and (min-width: 768) {
+    .headerBar {
+        width: 90% !important;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .headerBar {
+        width: 94% !important;
+    }
+}
+
