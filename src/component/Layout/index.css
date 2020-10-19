@@ -9,7 +9,8 @@
 .footer {
     color: #fff;
     background: #6A1817;
-    border-radius: 3px;
+    border-radius: 4px;
+    padding: 3%
 }
 .cusHeading {
     font-family: SansPro Bold;
